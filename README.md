@@ -75,4 +75,4 @@ note: Install the latest version
 
 ## output result
 
-![Output Example](https://github.com/Anandukc/object_counting/blob/main/result.mp4)
+![Output Example](https://github.com/Anandukc/object_counting/blob/main/bottles.png)
