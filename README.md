@@ -69,7 +69,9 @@ note: Install the latest version
   python detect.py
 ```
   
+  note: users can set the classes of object they want to detect by using the argument classes=[0,1,2]
 
 
 
 ## output result
+
