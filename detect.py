@@ -21,7 +21,7 @@ counter = object_counter.ObjectCounter()
 counter.set_args(view_img=True,
                  reg_pts=line_points,
                  classes_names=model.names,
-                 draw_tracks=False,
+                 draw_tracks=True,
                  view_in_counts=False,
                  region_thickness=4,
                  count_color=(255,0,0))
@@ -32,7 +32,7 @@ while cap.isOpened():
         print("Video frame is empty or video processing has been successfully completed.")
         break
     im0 = cv2.resize(im0, (1080, 600))    # set image size for display
-    tracks = model.track(im0, persist=True, show=False, classes=39)
+    tracks = model.track(im0, persist=True, show=True, classes=39)
 
     im0 = counter.start_counting(im0, tracks)
     video_writer.write(im0)
